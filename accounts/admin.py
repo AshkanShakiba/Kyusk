@@ -15,8 +15,8 @@ class KyuskUserAdmin(UserAdmin):
         "age",
         "is_staff",
     ]
-    fieldsets = UserAdmin.fieldsets + ((None, {"fields": ("age", )}), )
-    add_fieldsets = UserAdmin.add_fieldsets + ((None, {"fields": ("age", )}), )
+    fieldsets = UserAdmin.fieldsets + ((None, {"fields": ("age",)}),)
+    add_fieldsets = UserAdmin.add_fieldsets + ((None, {"fields": ("age",)}),)
 
 
 admin.site.register(KyuskUser, KyuskUserAdmin)

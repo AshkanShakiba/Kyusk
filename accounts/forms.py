@@ -6,10 +6,10 @@ from .models import KyuskUser
 class KyuskUserCreationForm(UserCreationForm):
     class Meta(UserCreationForm):
         model = KyuskUser
-        fields = UserCreationForm.Meta.fields + ("age", )
+        fields = ("username","email","age")
 
 
 class KyuskUserChangeForm(UserChangeForm):
     class Meta(UserChangeForm):
         model = KyuskUser
-        fields = UserChangeForm.Meta.fields
+        fields = ("username","email","age")
