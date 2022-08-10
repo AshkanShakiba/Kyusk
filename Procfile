@@ -1,0 +1,1 @@
+web: gunicorn kyusk.wsgi --log-file -
