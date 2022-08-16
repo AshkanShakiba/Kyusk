@@ -31,11 +31,13 @@
             </div>
         </div>
     {% endfor %}
-    <h4>Add a Comment</h4>
-    <form action="" method="post">
-        {% csrf_token %}
-        {{ form|crispy }}
-        <button class="btn btn-success ml-2" type="submit">Comment</button>
-    </form>
-    <br>
+    {% if user.is_authenticated %}
+        <h4>Add a Comment</h4>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button class="btn btn-success ml-2" type="submit">Comment</button>
+        </form>
+        <br>
+    {% endif %}
 {% endblock content %}

@@ -18,3 +18,10 @@ Articles: create, read, update and delete functionalities has been implemented f
 Comments: users can comment on articles after authentication.
 
 Admin: dashboard implemented using django admin app which can be used to manage users, articles, comments etc.
+
+
+## how to run
+
+Run `python manage.py runserver` to start development server on `http://localhost:8000/`.
+
+Run `python manage.py test` to execute tests.
